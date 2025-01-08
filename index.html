@@ -3,10 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231- Sthephani Platero</title>
+    <title>Sthephani Home Page -WDD231-</title>
+    <meta name="description" content="This is a sample webpage about web development fundamentals for the class WDD231.">
+    <meta name="author" content="Sthephani Platero">
+    <link rel="stylesheet" href="styles/main_page_smaller.css">
+    <link rel="stylesheet" href="styles/main_page_normal.css">
 </head>
 <body>
-    <h1>Prueba</h1>
-    
+
+    <!-- Header -->
+    <header>
+        <figure class="myphoto">
+            <img src="images/Photo.jpg" alt="Photo of Sthephani" style="width: 100px; height: auto;">
+        </figure>
+        <h1>- Sthephani Yamileth Platero -</h1>
+    </header>
+
+    <!--Navigation Bar -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="https://byui.instructure.com/">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="https://github.com/sthephaniplatero">Github Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/sthephani-platero/">LinkedIn</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Main layout -->
+    <main>
+        <div class="layout-container">
+            <!-- Main Content -->
+            
+            <section class="card1">
+                <h2>Course Work</h2>
+                <p>
+            </section>
+
+            <section class="card2">
+                <h2>San Salvador - El Salvador</h2>
+                <figure class="city">
+                    <img src="images/centro-2.webp" alt="San Salvador" style="width: 260px; height: auto;">
+                    <p>Center of San Salvador</p>
+                </figure>
+                
+            </section>
+
+            <section class="card3">
+                <h2>Web and Computer Programming Certificate</h2>
+                <p>
+            </section>
+
+        </div> 
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;2024 | Sthephani Yamileth Platero | El Salvador |
+
+            <img src="images/flag.jpg" alt="Flag of El Salvador" style="width: 40px; height: auto;"> </p>
+        
+        <p>Last Modification: <span id="date-modification"></span></p>
+    </footer>
+
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/main_page.js"></script>
 </body>
 </html>

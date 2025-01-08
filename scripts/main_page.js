@@ -95,12 +95,12 @@ function displayCourses(courseList) {
     const courseListContainer = document.querySelector('#course-list');
     const totalCreditsContainer = document.querySelector('#total-credits');
     
-    courseListContainer.innerHTML = ''; // Clear previous content
+    courseListContainer.innerHTML = ''; 
 
-    // Calculate total credits using reduce
+  
     const totalCredits = courseList.reduce((acc, course) => acc + course.credits, 0);
     
-    // Display total credits
+    
     totalCreditsContainer.innerHTML = `<strong>Total Credits: </strong>${totalCredits}`;
 
     courseList.forEach(course => {
@@ -108,7 +108,7 @@ function displayCourses(courseList) {
         courseDiv.classList.add('course');
         
         // Apply color based on completion status
-        courseDiv.style.color = course.completed ? 'green' : 'red';  // Completed = green, Incomplete = red
+        courseDiv.style.color = course.completed ? '#1de4b6' : '#FFC300';  
 
         courseDiv.innerHTML = `
             <h3>${course.title}</h3>

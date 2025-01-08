@@ -14,19 +14,19 @@
     <!-- Header -->
     <header>
         <figure class="myphoto">
-            <img src="images/Photo.jpg" alt="Photo of Sthephani" style="width: 100px; height: auto;">
+            <img src="images/myphoto.jpg" alt="Photo of Sthephani" style="width: 75px; height: auto;">
         </figure>
         <h1>- Sthephani Yamileth Platero -</h1>
     </header>
 
     <!--Navigation Bar -->
     <nav class="top-nav">
-        <ul>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
             <li><a href="https://byui.instructure.com/">Home</a></li>
             <li><a href="">Chamber</a></li>
             <li><a href="https://github.com/sthephaniplatero">Github Profile</a></li>
             <li><a href="https://www.linkedin.com/in/sthephani-platero/">LinkedIn</a></li>
-            
         </ul>
     </nav>
 
@@ -37,7 +37,9 @@
             
             <section class="card1">
                 <h2>Course Work</h2>
-                <p>
+                <p>-</p>
+                <p>-</p>
+                <p>-</p>
             </section>
 
             <section class="card2">
@@ -51,7 +53,17 @@
 
             <section class="card3">
                 <h2>Web and Computer Programming Certificate</h2>
-                <p>
+                <div class="filter-buttons">
+                    <button id="all-courses">All Courses</button>
+                    <button id="wdd-courses">WDD Courses</button>
+                    <button id="cse-courses">CSE Courses</button>
+                </div>
+                <div id="course-list">
+                </div>
+
+                <div id="total-credits">
+                </div>
+                
             </section>
 
         </div> 
@@ -59,9 +71,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy;2024 | Sthephani Yamileth Platero | El Salvador |
+        <p>&copy;2024 | Sthephani Yamileth Platero | El Salvador |   
 
-            <img src="images/flag.jpg" alt="Flag of El Salvador" style="width: 40px; height: auto;"> </p>
+            <img src="images/flag.jpg" alt="Flag of El Salvador" style="width: 30px; height: auto;"> </p>
         
         <p>Last Modification: <span id="date-modification"></span></p>
     </footer>

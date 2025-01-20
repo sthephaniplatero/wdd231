@@ -3,31 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Salvador Chamber E-commerce-</title>
+    <title>San Salvador Chamber E-commerce</title>
     <meta name="description" content="This is a sample webpage about web development fundamentals for the class WDD231.">
     <meta name="author" content="Sthephani Platero">
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chaber_smaller.css">
     <link rel="shortcut icon" href="images/favicon (4).ico" type="image/x-icon">
     <link rel="icon" href="images/favicon (4).ico" type="image/x-icon">
     <meta property="og:title" content="San Salvador Chamber E-commerce">
-    <meta property="og:type" content="Web site" />
+    <meta property="og:type" content="Website" />
     <meta property="og:description" content="Home page for San Salvador Chamber E-commerce">
     <meta property="og:image" content="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/e8/5a/fe/20181228-012854-largejpg.jpg?w=1100&h=1100&s=1">
     <meta property="og:url" content="https://sthephaniplatero.github.io/wdd231/chamber/directory.html">
-   
-
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:site_name" content="San Salvador Chamber E-commerce" />
+    <meta name="twitter:image:alt" content="Home page for San Salvador Chamber E-commerce"/>   
 </head>
 
 <body>
-    <header>
-        <h1></h1>
-      </header>
-      <main>
-        <div id="cards"></div>
-      </main>
-      <footer>
-        
-      </footer>
+    <header class="top-bar">
+        <div class="logo">
+            <a href="#">
+                <img src="images/chamber.png" alt="Logo" class="logo-img">
+            </a>
+            <div class="logo-text">
+                <h2>San Salvador</h2>
+                <h3>Chamber of commerce</h3>
+            </div>
+        </div>
 
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to San Salvador Chamber Of Commerce</h1>
+                <p>Empowering businesses in San Salvador</p>
+            </div>
+        </section>
+
+        <h2>Home</h2>
+
+        <div class="info-row">
+            <!-- Events Section -->
+            <section class="events">
+                <h2>Events</h2>
+                <div class="event-list">
+                    <div class="event-item">
+                        <h3>Business Networking Event</h3>
+                        <p>Date: January 25, 2024</p>
+                        <p>Location: San Salvador Convention Center</p>
+                        <a href="#">More Info</a>
+                    </div>
+                
+                </div>
+            </section>
+    
+            <!-- Current Weather Section -->
+            <section class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Sunny Weather Icon" style="width: 100px; height: auto; margin-bottom: 20px;">
+                    <p><strong>Temperature:</strong> 75°F</p>
+                    <p><strong>Condition:</strong> Sunny</p>
+                    <p><strong>Humidity:</strong> 60%</p>
+                    <p><strong>High:</strong> 85°F</p>
+                    <p><strong>Low:</strong> 52°F</p>
+                    <p><strong>Sunrise:</strong> 7:30 AM</p>
+                    <p><strong>Sunset:</strong> 9:59 PM</p>
+                </div>
+            </section>
+    
+            <!-- Weather Forecast Section -->
+            <section class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div class="forecast-list">
+                    <div class="forecast-item">
+                        <p><strong>Today</strong></p>
+                        <p>90°F</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p><strong>Wednesday</strong></p>
+                        <p>89°F</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p><strong>Thursday</strong></p>
+                        <p>68°F</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        
+
+        
+
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="organization-info">
+                    <h4>San Salvador Chamber of Commerce</h4>
+                    <p>San Salvador, El Salvador</p>
+                    <p><a href="mailto:info@sansalvadorchamber.com">info@sansalvadorchamber.com</a></p>
+                    <p>(503)6305-25836</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png" alt="Twitter" style="width: 50px; height: auto;">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMu-xhsjlnjS7bGXEZhmQqX46rXFY46oL8g&s" alt="Instagram" style="width: 25px; height: auto;">
+                </a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube" style="width: 25px; height: auto;">
+                </a>
+            </div>
+
+        
+            <div class="footer-right">
+                <p>WDD 231 Class Project<br>Sthephani Yamileth Platero<br>&copy;2024 San Salvador Chamber of Commerce</p>
+                <p>Last Modification: <span id="date-modification"></span></p>
+            </div>
+
+            
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

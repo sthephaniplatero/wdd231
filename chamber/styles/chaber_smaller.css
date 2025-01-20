@@ -1,0 +1,342 @@
+/* Footer styles */
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* Footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left side (organization info) */
+.footer-left {
+    text-align: left;
+    flex: 1;
+}
+
+.organization-info h4 {
+    margin: 10px 0 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #FFD700;
+}
+
+.organization-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.organization-info a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.organization-info a:hover {
+    text-decoration: underline;
+}
+
+/* Centered social links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social-links a {
+    margin: 0 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Right side (footer text) */
+.footer-right {
+    text-align: right;
+    flex: 1;
+}
+
+/* General footer text styles */
+.footer-content p {
+    margin: 5px 0;
+}
+
+/* Responsiveness for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer-content {
+        display: block; /* Cambia a bloque para alinear todo en una columna */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .footer-left, .footer-right {
+        text-align: center; /* Asegura que el texto esté centrado */
+        margin-bottom: 20px; /* Espacio entre las secciones */
+    }
+
+    .social-links {
+        margin-top: 20px; /* Espaciado entre las redes sociales */
+    }
+
+    .social-links a {
+        margin: 10px; /* Espaciado entre los iconos de redes sociales */
+    }
+}
+
+
+/* Current Weather Section */
+.current-weather {
+    background-color: #fff3e0;
+    padding: 20px;
+}
+
+.current-weather h2 {
+    font-size: 28px;
+    color: #FF5722;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info p {
+    font-size: 18px;
+    color: #333;
+}
+
+.current-weather img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+    height: auto;
+}
+
+/* Weather Forecast Section */
+.weather-forecast {
+    background-color: #c8e6c9;
+    padding: 20px;
+}
+
+.weather-forecast h2 {
+    font-size: 28px;
+    color: #388E3C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forecast-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.forecast-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.forecast-item strong {
+    font-size: 18px;
+    color: #007BFF;
+}
+
+/* Container for the row */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Individual sections */
+.info-row section {
+    flex: 1; /* Each section takes up equal space */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.info-row h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    background-color: #FFD700;
+}
+
+/* Weather Info Styles */
+.weather-info p, .forecast-list p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Weather Forecast Items */
+.forecast-list .forecast-item {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Align sections in a single column */
+    .current-weather, .weather-forecast {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Weather forecast items stack in a single column */
+    .forecast-list {
+        display: block;
+    }
+
+    .forecast-item {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 15px; /* Add spacing between items */
+    }
+
+    /* Align info-row sections in a column */
+    .info-row {
+        display: block; /* Stacks sections in a single column */
+        margin: 20px 0;
+    }
+
+    .info-row section {
+        width: 100%; /* Full width for each section */
+        margin-bottom: 20px; /* Add space between sections */
+    }
+}
+
+/* Hero Text Styles */
+.hero-text h1 {
+    font-size: 60px;
+    margin: 50px;
+}
+
+.hero-text p {
+    font-size: 60px;
+    color: #007BFF;
+    background-color: #FFD700;
+}
+
+h2 {
+    padding-left: 40px;
+    color: #007BFF;
+    font-size: 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Hero heading */
+    .hero-text h1 {
+        font-size: 8vw; /* Adjusts the font size based on the viewport width */
+        margin: 20px; /* Reduces the margin */
+    }
+
+    /* Hero paragraph */
+    .hero-text p {
+        font-size: 6vw; /* Adjusts the font size based on the viewport width */
+        padding: 10px; /* Reduces padding */
+    }
+
+    /* Section title h2 */
+    h2 {
+        font-size: 28px; /* Smaller font size for smaller screens */
+        padding-left: 20px; /* Adjusts the left padding */
+    }
+}
+
+@media (max-width: 320px) {
+    /* Further adjustments for very small screens */
+    .hero-text h1 {
+        font-size: 10vw; /* Even smaller font size for very small screens */
+    }
+
+    .hero-text p {
+        font-size: 8vw; /* Adjusts the paragraph font size */
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller font size for very small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the nav links by default */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #007BFF;
+        border-radius: 8px;
+        padding: 10px;
+        width: 200px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the nav links when the menu is active */
+    }
+
+    /* Show the hamburger menu on mobile */
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the nav links by default */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #007BFF;
+        border-radius: 8px;
+        padding: 10px;
+        width: 200px;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 10; /* Ensure the menu is on top */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the nav links when the menu is active */
+    }
+
+    /* Show the hamburger menu on mobile */
+    .hamburger-menu {
+        display: flex;
+    }
+}

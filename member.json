@@ -1,0 +1,22 @@
+{
+    "familyName": "Platero",
+    "dateMove": "nov/15/1988",
+    "numberOfPeople": 2,
+    "VisitedByBishopric": false,
+    "IndividualFamilyMember": [
+    {
+      "name": "Sthephani",
+      "gender": "Female",
+      "Birthdate": "sep/15/1965"
+    },
+
+    {
+        "name": "Maria",
+        "gender": "Female",
+        "Birthdate": "Nov/02/1942"
+    }
+
+]
+
+    
+}

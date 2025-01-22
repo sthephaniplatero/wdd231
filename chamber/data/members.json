@@ -1,0 +1,72 @@
+[
+    {
+      "name": "Tech Innovations Inc.",
+      "address": "1234 Silicon Drive, Tech City, TX 75001",
+      "phone": "+1-800-555-1234",
+      "website": "https://www.techinnovations.com",
+      "imageFile": "tech_innovations_logo.png",
+      "membershipLevel": 3,
+      "industry": "Technology",
+      "foundedYear": 2008
+    },
+    {
+      "name": "Green Energy Solutions",
+      "address": "567 Renewable Blvd, Greenfield, CA 90012",
+      "phone": "+1-800-555-5678",
+      "website": "https://www.greenenergysolutions.com",
+      "imageFile": "green_energy_logo.png",
+      "membershipLevel": 2,
+      "industry": "Energy",
+      "foundedYear": 2015
+    },
+    {
+      "name": "Global Fintech Co.",
+      "address": "89 Wall Street, New York, NY 10005",
+      "phone": "+1-212-555-3456",
+      "website": "https://www.globalfintech.com",
+      "imageFile": "global_fintech_logo.png",
+      "membershipLevel": 3,
+      "industry": "Finance",
+      "foundedYear": 2010
+    },
+    {
+      "name": "Urban Eats Group",
+      "address": "432 Culinary Lane, Foodtown, IL 60606",
+      "phone": "+1-312-555-6789",
+      "website": "https://www.urbaneatsgroup.com",
+      "imageFile": "urban_eats_logo.png",
+      "membershipLevel": 1,
+      "industry": "Hospitality",
+      "foundedYear": 2005
+    },
+    {
+      "name": "NextGen Robotics",
+      "address": "101 Innovation Parkway, RoboCity, WA 98001",
+      "phone": "+1-425-555-9876",
+      "website": "https://www.nextgenrobotics.com",
+      "imageFile": "nextgen_robotics_logo.png",
+      "membershipLevel": 2,
+      "industry": "Manufacturing",
+      "foundedYear": 2018
+    },
+    {
+      "name": "Pure Wellness Co.",
+      "address": "765 Health Avenue, Wellville, FL 33021",
+      "phone": "+1-305-555-4321",
+      "website": "https://www.purewellness.com",
+      "imageFile": "pure_wellness_logo.png",
+      "membershipLevel": 1,
+      "industry": "Health & Wellness",
+      "foundedYear": 2012
+    },
+    {
+      "name": "Creative Studio Works",
+      "address": "999 Art Street, Design City, OR 97201",
+      "phone": "+1-503-555-2468",
+      "website": "https://www.creativestudioworks.com",
+      "imageFile": "creative_studio_logo.png",
+      "membershipLevel": 3,
+      "industry": "Creative Services",
+      "foundedYear": 2000
+    }
+  ]

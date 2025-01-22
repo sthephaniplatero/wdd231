@@ -339,4 +339,55 @@ h2 {
     .hamburger-menu {
         display: flex;
     }
+
+    .member {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Imagen del miembro */
+      .member img {
+        max-width: 100px;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+      
+      /* Contenedor del contenido de cada miembro */
+      .member-content {
+        display: flex;
+        align-items: center;
+      }
+      
+      /* Detalles del miembro */
+      .member-details {
+        margin-left: 10px;
+      }
+      
+      /* Colores según el nivel de membresía */
+      .gold {
+        background-color: #ffd700;
+      }
+      
+      .silver {
+        background-color: #c0c0c0;
+      }
+      
+      .member-level-1 {
+        background-color: #f0f0f0;
+      }
+      
+      /* Enlaces */
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+    
 }

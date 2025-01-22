@@ -2,7 +2,16 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
 }
+
+
+main {
+    min-height: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
 
 /* Top bar styles */
 .top-bar {
@@ -244,6 +253,23 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+/* Estilos de los botones */
+.nav-links button {
+    margin: 10px 0;  /* Agrega un margen vertical entre los botones */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-links button:hover {
+    background-color: #0056b3;
+}
+
 /* Section Titles */
 .info-row h2 {
     font-size: 24px;
@@ -299,7 +325,7 @@ footer {
     color: white;
     padding: 20px;
     font-family: Arial, sans-serif;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 /* Footer content */
@@ -448,52 +474,136 @@ body {
 }
 
 
+#member-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#member-container.grid-view .member {
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+    max-width: calc(25% - 20px);
+}
+
+#member-container.list-view .member {
+    flex: 1 1 100%; /* Full-width for each card */
+    max-width: 100%;
+}
+
+/* Styling for member cards */
 .member {
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 8px;
+    text-align: center;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Imagen del miembro */
-  .member img {
-    max-width: 100px;
-    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.member h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.member p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Toggle buttons */
+.view-toggle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.view-toggle button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
     border-radius: 5px;
-  }
-  
-  /* Contenedor del contenido de cada miembro */
-  .member-content {
+    background-color: #007BFF;
+    color: white;
+}
+
+.view-toggle button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor principal */
+#member-container {
     display: flex;
-    align-items: center;
-  }
-  
-  /* Detalles del miembro */
-  .member-details {
-    margin-left: 10px;
-  }
-  
-  /* Colores según el nivel de membresía */
-  .gold {
-    background-color: #ffd700;
-  }
-  
-  .silver {
-    background-color: #c0c0c0;
-  }
-  
-  .member-level-1 {
-    background-color: #f0f0f0;
-  }
-  
-  /* Enlaces */
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos para la vista de cuadrícula */
+#member-container.grid-view .member {
+    flex: 1 1 calc(25% - 20px); /* 4 tarjetas por fila */
+    max-width: calc(25% - 20px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la vista de lista */
+#member-container.list-view {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#member-container.list-view .member {
+    display: table-row;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+#member-container.list-view .member-header {
+    display: table-row;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+#member-container.list-view .member div {
+    display: table-cell;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Botones de cambio de vista */
+.view-toggle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.view-toggle button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.view-toggle button:hover {
+    background-color: #0056b3;
+}
+

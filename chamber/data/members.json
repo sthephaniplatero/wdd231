@@ -1,7 +1,7 @@
 [
     {
       "name": "Tech Innovations Inc.",
-      "address": "1234 Silicon Drive, Tech City, TX 75001",
+      "address": "1234 Silicon Drive, San Salvador , El Salvador",
       "phone": "+1-800-555-1234",
       "website": "https://www.techinnovations.com",
       "imageFile": "tech_innovations_logo.png",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Green Energy Solutions",
-      "address": "567 Renewable Blvd, Greenfield, CA 90012",
+      "address": "567 Renewable Blvd, San Salvador , El Salvador",
       "phone": "+1-800-555-5678",
       "website": "https://www.greenenergysolutions.com",
       "imageFile": "green_energy_logo.png",
@@ -21,7 +21,7 @@
     },
     {
       "name": "Global Fintech Co.",
-      "address": "89 Wall Street, New York, NY 10005",
+      "address": "89 Wall Street, San Salvador , El Salvador",
       "phone": "+1-212-555-3456",
       "website": "https://www.globalfintech.com",
       "imageFile": "global_fintech_logo.png",
@@ -31,7 +31,7 @@
     },
     {
       "name": "Urban Eats Group",
-      "address": "432 Culinary Lane, Foodtown, IL 60606",
+      "address": "432 Culinary Lane, San Salvador , El Salvador",
       "phone": "+1-312-555-6789",
       "website": "https://www.urbaneatsgroup.com",
       "imageFile": "urban_eats_logo.png",
@@ -41,7 +41,7 @@
     },
     {
       "name": "NextGen Robotics",
-      "address": "101 Innovation Parkway, RoboCity, WA 98001",
+      "address": "101 Innovation Parkway, San Salvador , El Salvador",
       "phone": "+1-425-555-9876",
       "website": "https://www.nextgenrobotics.com",
       "imageFile": "nextgen_robotics_logo.png",
@@ -51,7 +51,7 @@
     },
     {
       "name": "Pure Wellness Co.",
-      "address": "765 Health Avenue, Wellville, FL 33021",
+      "address": "765 Health Avenue, San Salvador , El Salvador",
       "phone": "+1-305-555-4321",
       "website": "https://www.purewellness.com",
       "imageFile": "pure_wellness_logo.png",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Creative Studio Works",
-      "address": "999 Art Street, Design City, OR 97201",
+      "address": "999 Art Street, San Salvador , El Salvador",
       "phone": "+1-503-555-2468",
       "website": "https://www.creativestudioworks.com",
       "imageFile": "creative_studio_logo.png",

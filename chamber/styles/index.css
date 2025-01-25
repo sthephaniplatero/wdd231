@@ -1,0 +1,59 @@
+#business-spotlights {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#business-spotlights h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#spotlights-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.spotlight-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+
+.spotlight-card p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.spotlight-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.spotlight-link:hover {
+    background-color: #0056b3;
+}

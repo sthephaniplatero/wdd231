@@ -8,6 +8,7 @@
     <meta name="author" content="Sthephani Platero">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chaber_smaller.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="shortcut icon" href="images/favicon (4).ico" type="image/x-icon">
     <link rel="icon" href="images/favicon (4).ico" type="image/x-icon">
     <meta property="og:title" content="San Salvador Chamber E-commerce">
@@ -55,20 +56,69 @@
             </div>
         </section>
 
-        <h2>Directory</h2>
+        <h2>Home</h2>
 
+        <section id="cta">
+            <h2>Get Involved</h2>
+            <a href="join.html" class="cta-link">Join the Chamber of Commerce Today!</a>
+        </section>
 
-    </main>
+        <section id="business-spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlights-container">
+               
+            </div>
+        </section>
 
-    <nav>
-        <div class="nav-links">
-            <button id="grid-view-btn">Grid</button>
-            <button id="list-view-btn">List</button>
-        </div>
-    </nav>
+        <div class="info-row">
+            <!-- Events Section -->
+            <section class="events">
+                <h2>Events</h2>
+                <div class="event-list">
+                    <div class="event-item">
+                        <h3>Business Networking Event</h3>
+                        <p>Date: January 25, 2024</p>
+                        <p>Location: San Salvador Convention Center</p>
+                        <a href="#">More Info</a>
+                    </div>
+                
+                </div>
+            </section>
+    
+            <!-- Current Weather Section -->
+            <section class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <img id="weather-icon" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Sunny Weather Icon" style="width: 100px; height: auto; margin-bottom: 20px;">
+                    <p><strong>Temperature:</strong> <span id="temperature">75°F</span></p>
+                    <p><strong>Condition:</strong> <span id="condition">Sunny</span></p>
+                    <p><strong>Humidity:</strong> <span id="humidity">60%</span></p>
+                    <p><strong>High:</strong> <span id="high-temp">85°F</span></p>
+                    <p><strong>Low:</strong> <span id="low-temp">52°F</span></p>
+                    <p><strong>Sunrise:</strong> <span id="sunrise">7:30 AM</span></p>
+                    <p><strong>Sunset:</strong> <span id="sunset">9:59 PM</span></p>
+                </div>
+            </section>
+            
+            <section class="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div class="forecast-list">
+                    <div class="forecast-item">
+                        <p><strong>Today</strong></p>
+                        <p id="forecast-today">90°F</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p><strong>Wednesday</strong></p>
+                        <p id="forecast-wednesday">89°F</p>
+                    </div>
+                    <div class="forecast-item">
+                        <p><strong>Thursday</strong></p>
+                        <p id="forecast-thursday">68°F</p>
+                    </div>
+                </div>
+            </section>
 
-    <div id="member-container" class="list-view">
-
+    </main> 
 
     
     <footer>
@@ -107,5 +157,6 @@
     
     <script src="scripts/getdates.js"></script>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

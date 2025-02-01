@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.main-buttons-container {
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.membership-button {
+    background: #FFD700;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    flex-shrink: 0; 
+    animation-duration: 3s;
+    animation-name: slide-in;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.membership-button:hover {
+    transform: scale(1.05);
+}
+
+#dialogBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007BFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 90%;
+    min-width: 300px;
+    text-align: center;
+}
+
+#dialogBox.show {
+    display: block;
+}
+
+#dialogBoxContent > div {
+    font-weight: bold;
+    font-size: 15px;
+    color:#FFD700 ;
+}
+
+#dialogBoxBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+    z-index: 999;
+    display: none;
+}
+
+#dialogBox.show ~ #dialogBoxBackdrop {
+    display: block;
+}
+
+#dialogBoxContent {
+    padding: 20px;
+}
+
+#closeButton {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#dialogBoxText {
+    margin-top: 10px;
+    white-space: pre-line;
+}
+
+main h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #FFD700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFD700;
+    color: #007BFF;
+}
+
+#dialogBoxText {
+    white-space: pre-line;
+}

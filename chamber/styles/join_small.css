@@ -1,0 +1,66 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    form {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .main-buttons-container {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .membership-button {
+        width: 100%; 
+        font-size: 14px; 
+        padding: 12px 20px; 
+    }
+
+    input, select, textarea {
+        padding: 10px; 
+        font-size: 14px;
+    }
+
+    #dialogBox {
+        max-width: 90%;
+        min-width: 80%; 
+    }
+
+    #closeButton {
+        padding: 8px 12px; 
+    }
+
+    input[type="submit"] {
+        padding: 12px 20px;
+        font-size: 18px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px; 
+    }
+
+    .membership-button {
+        font-size: 13px; 
+        padding: 10px 15px;
+    }
+
+    input, select, textarea {
+        padding: 8px; 
+        font-size: 12px; 
+    }
+
+    #dialogBox {
+        min-width: 70%; 
+    }
+
+    input[type="submit"] {
+        font-size: 16px; 
+    }
+}

@@ -8,6 +8,8 @@
     <meta name="author" content="Sthephani Platero">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chaber_smaller.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join_small.css">
     <link rel="shortcut icon" href="images/favicon (4).ico" type="image/x-icon">
     <link rel="icon" href="images/favicon (4).ico" type="image/x-icon">
     <meta property="og:title" content="San Salvador Chamber E-commerce">
@@ -47,30 +49,81 @@
     </header>
     
     <main>
+        <h2>More Info</h2>
 
-        <section class="hero-image">
-            <div class="hero-text">
-                <h1>Welcome to San Salvador Chamber Of Commerce</h1>
-                <p>Empowering businesses in San Salvador</p>
+        <div class="main-buttons-container">
+            <button class="membership-button" id="OpenButton1">Free Membership</button>
+            <button class="membership-button" id="OpenButton2">Bronze Membership</button>
+            <button class="membership-button" id="OpenButton3">Silver Membership</button>
+            <button class="membership-button" id="OpenButton4">Gold Membership</button>
+        </div>
+
+        <!-- Modal -->
+        <div id="dialogBox">
+            <div id="dialogBoxBackdrop"></div> 
+            <div id="dialogBoxContent">
+                <div>Membership</div>
+                <div id="dialogBoxText"></div> 
+                <button id="closeButton">❌</button>
             </div>
-        </section>
+        </div>
 
-        <h2>Directory</h2>
 
+        <form action="thankyou.html" method="get">
+            <label>
+                First Name:
+                <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+            
+            <label>
+                Last Name:
+                <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+            
+            <label>
+                Organizational Title:
+                <input type="text" name="org_title" title="Your title in the organization" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+            </label>
+            
+            <label>
+                Email:
+                <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@domain.com" required>
+            </label>
+            
+            <label>
+                Mobile Phone:
+                <input type="tel" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
+            </label>
+            
+            <label>
+                Organization Name:
+                <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+            </label>
+            
+            <label>
+                Membership Level:
+                <select name="membership">
+                    <option value="Free"> Free Membership</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            
+            <label>
+                Business Description:
+                <textarea name="description" title="Describe your business"></textarea>
+            </label>
+            
+            <input type="hidden" name="timestamp" id="timestamp">
+            
+            <input type="submit" value="Join Us">
+        </form>
+        
 
     </main>
+</body>
 
-    <nav>
-        <div class="nav-links">
-            <button id="grid-view-btn">Grid</button>
-            <button id="list-view-btn">List</button>
-        </div>
-    </nav>
-
-    <div id="member-container" class="list-view">
-
-
-    
     <footer>
         <div class="footer-content">
             <div class="footer-left">
@@ -84,7 +137,7 @@
 
             <div class="social-links">
                 <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                    <img src="https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png" alt="Twitter" style="width: 50px; height: auto;">
+                    <img src="https://cdn.sengoku-his.com/bundles/aissengoku/img/sns/x_Logo_2_400.png" alt="Twitter" style="width: 50px; height: auto;">
                 </a>
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMu-xhsjlnjS7bGXEZhmQqX46rXFY46oL8g&s" alt="Instagram" style="width: 25px; height: auto;">
@@ -94,18 +147,15 @@
                 </a>
             </div>
 
-        
             <div class="footer-right">
                 <p>WDD 231 Class Project<br>Sthephani Yamileth Platero<br>&copy;2024 San Salvador Chamber of Commerce</p>
                 <p>Last Modification: <span id="date-modification"></span></p>
-            </div>
-
-            
             </div>
         </div>
     </footer>
     
     <script src="scripts/getdates.js"></script>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>

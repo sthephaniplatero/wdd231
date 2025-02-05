@@ -24,4 +24,18 @@
     .card3{
         width: 300px;
     }
+
+    .section {
+        background-color: #f4f4f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    
+    .section:hover {
+        background-color: #0056b3;
+        color:#98FF98 ;
+    }
+    
 }

@@ -89,11 +89,11 @@ header h1 span {
 @keyframes grow-shrink {
     25%,
     75% {
-      scale: 100%;
+      transform: scale(1);
     }
   
     50% {
-      scale: 200%;
+      transform: scale(2);
       color: #b6b1b1;
     }
   }

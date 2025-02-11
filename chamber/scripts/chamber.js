@@ -74,3 +74,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar-message");
+    const lastVisit = localStorage.getItem("lastVisit");
+
+    const now = new Date().getTime(); // Current timestamp
+
+    if (!lastVisit) {
+        // First visit
+        sidebar.innerText = "Welcome! Let us know if you have any questions.";
+    } else {
+        const lastVisitTime = parseInt(lastVisit, 10);
+        const timeDifference = now - lastVisitTime;
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24)); // Convert ms to days
+
+        if (daysDifference < 1) {
+            sidebar.innerText = "Back so soon! Awesome!";
+        } else {
+            sidebar.innerText = `You last visited ${daysDifference} ${daysDifference === 1 ? "day" : "days"} ago.`;
+        }
+    }
+
+    // Store the current visit time in localStorage
+    localStorage.setItem("lastVisit", now);
+});

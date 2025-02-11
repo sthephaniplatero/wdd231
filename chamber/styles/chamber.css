@@ -639,3 +639,95 @@ body {
 }
 
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card Styles */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Title */
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Address */
+.card address {
+    font-style: normal;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Cost */
+.card p strong {
+    color: #000;
+}
+
+/* Button */
+.card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.sidebar {
+    background-color: #FFD700;
+    padding: 10px;
+    border-left: 4px solid #FFD700;
+    font-size: 16px;
+    text-align: center;
+    color:#007BFF ;
+    margin-top: 10px;
+}
+
+
+
+

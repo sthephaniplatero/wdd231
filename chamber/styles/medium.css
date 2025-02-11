@@ -1,0 +1,26 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card img {
+        height: 220px; 
+    }
+
+    .card h2 {
+        font-size: 22px; 
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .card button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}

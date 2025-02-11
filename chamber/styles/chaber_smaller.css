@@ -483,3 +483,13 @@ h2 {
     
 }
 
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 180px;
+    }
+}
+

@@ -81,10 +81,14 @@ main {
     margin: 50px
 }
 
-.hero-text p {
+.hero-text p { 
     font-size: 60px;
-    color: #007BFF;
-    background-color: #FFD700;
+    color: #007BFF; /* Text color */
+    background-color: #FFD700; /* Background color */
+    border: 5px solid #007BFF; /* Orange border */
+    padding: 10px; /* Space inside the border */
+    display: inline-block; /* Ensures the border wraps the text properly */
+    border-radius: 8px; /* Optional: Rounds the corners */
 }
 
 h2{

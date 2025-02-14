@@ -1,0 +1,69 @@
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+}
+
+/* Estilo del botón hamburguesa */
+.hamburger-menu {
+    display: none; /* Oculto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #f49527; /* Color naranja */
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Estilos de la navegación */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Mostrar botón hamburguesa */
+    }
+
+    .nav-links {
+        display: none; /* Ocultar menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        background-color: #fbd5a8; /* Color crema */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostrar menú cuando está activo */
+    }
+}

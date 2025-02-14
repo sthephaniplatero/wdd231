@@ -64,12 +64,12 @@ header h1 {
     animation-duration: 5s;
     animation-name: slide-in;
     animation-iteration-count: 1;
-    animation-direction:unset;
+    animation-direction:alternate-reverse;
 }
 
 header h1 span {
     display: inline-block;
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-name: grow-shrink;
 }
 

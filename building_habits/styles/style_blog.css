@@ -1,0 +1,51 @@
+
+header {
+    background-color: #2596be;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2596be;
+}
+
+button {
+    background-color: #f49527;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fbd5a8;
+}
+
+
+
+/* Estilo para el contenido completo */
+.full-content {
+    margin-top: 15px;
+    color: #555;
+}

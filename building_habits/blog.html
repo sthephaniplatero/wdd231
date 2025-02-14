@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Habits</title>
+    <meta name="description" content="This is a sample webpage about web development fundamentals for the class WDD231.">
+    <meta name="author" content="Sthephani Platero">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style_smaller.css">
+    <link rel="stylesheet" href="styles/style_blog.css">
+    <link rel="stylesheet" href="styles/style_smaller_blog.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Building Habits">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Home page for Building Habits">
+    <meta property="og:image" content="https://www.vecteezy.com/photo/28766423-female-nutritionist-gives-consultation-to-patient-on-healthy-fruits-and-vegetables-proper-nutrition-and-dining-concept-generative-ai">
+    <meta property="og:url" content="https://sthephaniplatero.github.io/wdd231/building_habits.html">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:site_name" content="Building Habits" />
+    <meta name="twitter:image:alt" content="Home page for Building Habits"/>   
+</head>
+
+<div id="sidebar-message" class="sidebar"></div>
+
+
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <a href="#">
+                <img src="images/karen_logo.png" alt="Logo" class="logo-img">
+            </a>
+            <div class="logo-text">
+                <h2>Building Habits</h2>
+                <h3>By Karen Rodas</h3>
+            </div>
+        </div>
+    
+        <!-- Botón menú hamburguesa -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    
+        <!-- Navegación -->
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule Appointments</a>
+            <a href="blog.html">Blog</a>
+            <a href="test.html">Your Habits Test</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    
+    
+    <main>
+
+    
+        <main>
+            <section class="article" id="article1">
+                <h2> The Healthy Plate</h2>
+                <p>The Healthy Eating Plate, created by nutrition experts from the Harvard T.H. Chan School of Public Health and editors at Harvard Health Publications, is a guide for creating healthy and balanced meals (1). Also known as "El Plato del Buen Comer," it is well known among health professionals, especially in the field of dietetics, as it organizes different food groups in a way that achieves a balance in caloric intake, macronutrients, and micronutrients. The goal is to maintain a healthy weight appropriate for an individual’s age, size, and gender.
+
+                    The Healthy Plate is a highly useful tool and is recommended for individuals who do not have metabolic conditions that require medication. The Healthy Plate aims to provide a balance between macronutrients needed in larger amounts per meal and those needed in smaller quantities for a well-balanced diet. Most of the energy our body uses comes from carbohydrates, making them a key component of this dietary model.
+                    
+                    How to Organize Your Healthy Plate:
+                    ½ of the plate should consist of vegetables and fruits, excluding potatoes, plantains, sweet potatoes, and sweet corn in grains, which are classified differently.
+                    ¼ of the plate should be made up of grains or cereals. In the Salvadoran diet, this typically includes corn, plantains, and beans. Thanks to the food industry, whole wheat, barley, wheat grains, quinoa, oats, brown rice, and foods made with these ingredients, such as whole wheat pasta, are becoming more common.
+                    ¼ of the plate should be dedicated to proteins, including foods such as fish, chicken, eggs, low-fat cheeses, and lean cuts of beef. It is recommended to limit red meat consumption to 1–2 times per week and avoid processed meats such as sausages and their derivatives.
+                    Healthy fats are not included in as large a percentage as the other food groups since they have a higher caloric contribution. While some diets emphasize fats alongside proteins, in the Healthy Plate model, their role is minimal. Healthy fats include olive oil, avocado oil, avocados, butter, and other vegetable oils. However, compared to other options, olive oil and avocado oil remain the best choices for home consumption.
+                    Water and other beverages play an essential role in the Salvadoran diet. Given the country's predominantly hot climate, sugary beverages are a popular choice. The Healthy Plate encourages prioritizing water consumption over other drinks. It is important to reduce the intake of sugary beverages to occasional events, such as family gatherings or work meetings. For a daily diet rich in vitamins and minerals, it is best to avoid drinks with little or no nutritional value. A helpful tip for those struggling to reduce sugary drinks is to start incorporating cold water infused with strawberries or cucumber for a different flavor. This simple change can make a significant impact on your diet, and your body will thank you for it.
+                    Maintain a physically active lifestyle. We are versatile individuals with multiple interests, often juggling busy schedules. Many of us struggle to maintain a consistent workout routine due to work commitments. The key is to dedicate time to physical activity at least four times a week, even if the days are not consecutive. Engaging in cardiovascular or strength-training activities will push you beyond your comfort zone, accelerate your heart rate, and challenge your muscles. Incorporating physical activity is an essential complement to a healthy plate.
+                    Copyright © 2011 Harvard University. For more information on the Healthy Eating Plate, visit The Nutrition Source, Department of Nutrition, Harvard T.H. Chan School of Public Health at thenutritionsource.org and Harvard Health Publications at health.harvard.edu.</p>
+                <button onclick="toggleContent('article1')">Leer más</button>
+                <div class="full-content" id="content-article1" style="display: none;">
+                    <p>Contenido completo del artículo 1...</p>
+                </div>
+            </section>
+    
+            <section class="article" id="article2">
+                <h2>The Different Food Groups</h2>
+                <p>Milk and Dairy
+                    Cow's milk is the most widely consumed dairy worldwide. Given its nutritional value, it is commonly available in whole, semi-skimmed, and skimmed (or fat-free) varieties. The energy content per cup varies as follows:
+                    
+                    Whole milk: 134-150 kcal
+                    Semi-skimmed milk: 98-120 kcal
+                    Skimmed (fat-free) milk: 74-100 kcal
+                    Milk provides 6.7-8g of protein per cup, with 80% casein and 20% whey proteins. It also contains triglycerides, contributing to its fat content:
+                    
+                    Whole milk: 8g of fat per cup
+                    Semi-skimmed milk: 3.5-5g of fat per cup
+                    Skimmed milk: 0-0.4g of fat per cup
+                    Each liter of milk contains 40-50g of carbohydrates (approximately 12g per cup). Additionally, cow’s milk is a significant source of calcium, phosphorus, magnesium, and zinc.
+                    
+                    Vegetables and Greens
+                    These plant-based foods provide fiber, vitamins, and minerals while being low in calories, making them ideal for weight management. However, they lack protein and fat and contain low carbohydrate levels—except for starchy vegetables such as potatoes, corn, cassava, plantains, and sweet potatoes. Generally, they contain a high water content and contribute 25-30 kcal per serving (1 cup raw or ½ cup cooked), with ≤5g of carbohydrates and ≤2g of protein, and no fat.
+                    
+                    Fruits
+                    Fruits are naturally rich in carbohydrates, making their energy content higher than that of vegetables. The carbohydrate content varies by fruit and portion size, but on average, 100-150g of fruit provides ≤15g of carbohydrates and around 120 kcal per serving. To maintain a balanced diet, fruits should contribute about 10% of total dietary carbohydrates, though this may vary depending on an individual's nutritional goals and life stage.
+                    
+                    Bread and Cereals
+                    This group includes staple grains such as corn, rice, wheat-based bread, and pasta. The most nutritionally significant cereals are wheat, corn, rice, millet, rye, and barley. They are primarily composed of carbohydrates, followed by proteins and small amounts of fat. These foods are the body's primary source of energy. It is generally recommended that cereals contribute 55-60% of total caloric intake, though this may change based on individual needs.
+                    
+                    A 100g cooked serving of these cereals provides:
+                    
+                    80 kcal
+                    ≤15g of carbohydrates
+                    ≤2g of protein
+                    ≤1g of fat
+                    Meat
+                    Meat is crucial for muscle repair and growth. This group includes red meats (beef, lamb, goat), poultry (chicken, turkey, rabbit), and game meats (quail, venison, hare).
+                    
+                    From a nutritional perspective, there are few differences between red and white meats, although red meats contain more myoglobin, a protein rich in iron. In Salvadoran cuisine, chicken and beef are the most commonly consumed meats.
+                    
+                    To maximize protein intake, choose lean cuts such as chicken breast or beef sirloin and prefer cooking methods like grilling, boiling, or stewing to avoid excessive fat consumption.
+                    
+                    Nutritional values per 1 oz of cooked meat:
+                    
+                    7g of protein
+                    3g to 8g of fat
+                    55-100 kcal, depending on the cut (lean, semi-fatty, or fatty)
+                    Meat should provide 12-15% of total caloric intake, though this may vary based on health conditions or increased energy demands.
+                    
+                    Fats and Oils
+                    This group includes vegetable oils (canola, soybean, corn, sunflower) and healthier alternatives like olive oil, avocado oil, and coconut oil, which are gaining popularity in Salvadoran diets. However, these healthier oils should be consumed raw rather than heated to high temperatures.
+                    
+                    Nuts such as peanuts and cashews are also valuable sources of fats but should be eaten in moderation, as fats are the most calorie-dense macronutrient. Processed dressings—even "light" options—should be replaced with healthier fats.
+                    
+                    1 teaspoon of oil, butter, or margarine = 1 serving of fat
+                    Each serving provides 5g of fat (~45 kcal)
+                    Fats should make up 25-30% of total caloric intake, adjusted based on individual nutritional goals.</p>
+                <button onclick="toggleContent('article2')">Leer más</button>
+                <div class="full-content" id="content-article2" style="display: none;">
+                    <p>Contenido completo del artículo 2...</p>
+                </div>
+            </section>
+        </main>
+    
+    
+        <script src="script.js"></script> 
+
+    </main> 
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="organization-info">
+                    <h4>Building Habits By Karen Rodas</h4>
+                    <p>San Salvador, El Salvador</p>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="social-links">
+                
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMu-xhsjlnjS7bGXEZhmQqX46rXFY46oL8g&s" alt="Instagram" style="width: 25px; height: auto;">
+                </a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube" style="width: 25px; height: auto;">
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <p><br>Building Habits by Karen Rodas<br>&copy;2024 Sthephani Yamileth Plateros</p>
+               
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="scripts/building.js"></script>
+    <script src="scripts/blog.js"></script>
+   
+   
+</body>
+</html>

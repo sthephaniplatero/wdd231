@@ -1,51 +1,113 @@
-
-header {
-    background-color: #2596be;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+#articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-h1 {
-    font-size: 2.5rem;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.article {
-    background-color: #fff;
-    margin-bottom: 20px;
-    padding: 15px;
+/* Estilos para cada tarjeta de artículo */
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h2 {
-    font-size: 1.8rem;
-    color: #2596be;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-button {
-    background-color: #f49527;
+/* Imagen dentro de cada tarjeta */
+.card figure {
+    margin: 0;
+    padding: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Título y texto del artículo */
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 0 15px 20px;
+    color: #555;
+}
+
+/* Autor del artículo */
+.card author {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #777;
+    margin: 0 15px 10px;
+    display: block;
+    text-align: center;
+}
+
+/* Botón de "Learn More" */
+.card button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 15px;
-    cursor: pointer;
     border-radius: 4px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #fbd5a8;
+.card button:hover {
+    background-color: #45a049;
 }
 
+/* Títulos principales en la página */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
 
+/* Agregar espacio entre las secciones */
+section {
+    margin: 40px 0;
+    padding: 20px;
+}
 
-/* Estilo para el contenido completo */
-.full-content {
-    margin-top: 15px;
-    color: #555;
+/* Estilo de enlaces dentro del blog */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes para pantallas pequeñas (responsive design) */
+@media screen and (max-width: 768px) {
+    #articles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px 0;
+    }
 }

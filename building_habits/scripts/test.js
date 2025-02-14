@@ -19,15 +19,17 @@ const testQuestions = [
 let currentQuestionIndex = 0;
 let totalScore = 0;
 
-document.addEventListener("DOMContentLoaded", function() {
-    showQuestion();
-});
+function startQuiz() {
+    document.getElementById("start-button").style.display = "none"; // Ocultar el botón de inicio
+    document.getElementById("question-container").style.display = "block"; // Mostrar las preguntas
+    showQuestion(); // Iniciar la prueba
+}
 
 function showQuestion() {
     if (currentQuestionIndex < testQuestions.length) {
         const questionContainer = document.getElementById("question-container");
         const questionData = testQuestions[currentQuestionIndex];
-        
+
         questionContainer.innerHTML = `
             <h3>${questionData.question}</h3>
             ${questionData.options.map((option, index) => `
@@ -54,6 +56,6 @@ function showResult() {
     } else {
         resultText = "Congratulations! You have healthy eating habits.";
     }
-    
+
     document.getElementById("question-container").innerHTML = `<h2>Result:</h2><p>${resultText}</p>`;
 }

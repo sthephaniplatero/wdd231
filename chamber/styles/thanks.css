@@ -1,73 +1,54 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    color: #333;
-}
-
-/* Styling for main content area */
-main {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 90%;
+    padding: 20px;
     text-align: center;
 }
 
-h1 {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
-/* Styling for results section */
 #results {
-    margin-top: 30px;
+    background: white;
     padding: 20px;
-    background: #e3f2fd;
     border-radius: 8px;
-    font-size: 1.1em;
-    color: #0277bd;
-    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
 }
 
-/* Footer styling */
-footer {
-    width: 100%;
-    
-}
-
-/* Logo section */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo-img {
-    width: 80px;
-    height: auto;
-}
-
-.logo-text h2, .logo-text h3 {
-    margin: 0;
-}
-
-h2 {
-    font-size: 1.5em;
+#results p {
+    font-size: 16px;
     color: #333;
+    margin: 10px 0;
 }
 
-h3 {
-    font-size: 1em;
-    color: #0277bd;
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    text-align: center;
 }
 
+.modal.show {
+    display: block;
+}
+
+.modal button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal button:hover {
+    background: #0056b3;
+}

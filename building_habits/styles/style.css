@@ -5,7 +5,7 @@
     --primary-color: #f49527; /* Naranja principal */
     --secondary-color: #fbd5a8; /*  */
     --accent-color: #f4f4f4; /* Color claro para fondos */
-    --text-color: #2596be;
+    --text-color: hsl(119, 27%, 37%);
     --white: #fff;
     --shadow: rgba(0, 0, 0, 0.1);
 }
@@ -54,7 +54,7 @@ header.top-bar {
     align-items: center;
     padding: 1rem 5%;
     background: var(--secondary-color);
-    color: var(--#2596be);
+    color: var(--text-color);
     box-shadow: 0 4px 6px var(--shadow);
     position: sticky;
     top: 0;
@@ -123,7 +123,7 @@ main {
     justify-content: center;
     align-items: center;
     height: auto;
-    background-color:#fbd5a8 ; 
+    background-color:var(--primary-color) ; 
     border-radius: 50%;
     
 }
@@ -135,7 +135,7 @@ main {
 }
 
 #word {
-    color: var(--text-color) ; 
+    color: var(--accent-color) ; 
     font-weight: bold;
     text-decoration: underline;
 }

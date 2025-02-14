@@ -9,7 +9,7 @@ function generateCards() {
         const cardElement = document.createElement("div");
         cardElement.classList.add("card");
         cardElement.innerHTML = `
-            <h2>${place.name}</h2>
+            <h2>${place.title}</h2>
             <figure>
                 <img src="${place.photo_url}" alt="Image of ${place.name}" onerror="this.onerror=null;this.src='https://via.placeholder.com/150';">
             </figure>

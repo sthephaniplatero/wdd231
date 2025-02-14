@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://sthephaniplatero.github.io/wdd231/building_habits.html">
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:site_name" content="Building Habits" />
-    <meta name="twitter:image:alt" content="Home page for Building Habits"/>   
+    <meta name="twitter:image:alt" content="Schedule page for Building Habits"/>   
 </head>
 
 <div id="sidebar-message" class="sidebar"></div>
@@ -51,7 +51,7 @@
             <a href="schedule.html">Schedule Appointments</a>
             <a href="blog.html">Blog</a>
             <a href="test.html">Your Habits Test</a>
-            <a href="contact.html">Contact Me</a>
+            
         </nav>
     </header>
     
@@ -59,41 +59,77 @@
 
         <div class="appointment-container">
             <div class="profile-section">
-                <img src="https://via.placeholder.com/150" alt="Nutritionist Image" class="profile-img">
+                <img src="images/excersice.avif" alt="Nutritionist Image" class="profile-img">
                 <h2>Schedule an Appointment with Our Nutritionist</h2>
                 <p>Fill in the form below to book a consultation.</p>
             </div>
+
+            <div class="main-buttons-container">
+                <button class="membership-button" id="OpenButton1">Essential Plan</button>
+                <button class="membership-button" id="OpenButton2">Plus Plan</button>
+                <button class="membership-button" id="OpenButton3">Premium Plan</button>
+                
+            </div>
     
-            <form id="appointment-form" action="#">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+            <!-- Modal -->
+            <div id="dialogBox">
+                <div id="dialogBoxBackdrop"></div> 
+                <div id="dialogBoxContent">
+                    <div>Benefits</div>
+                    <div id="dialogBoxText"></div> 
+                    <button id="closeButton">❌</button>
                 </div>
+            </div>
     
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
     
-                <div class="form-group">
-                    <label for="date">Select Date</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="time">Select Time</label>
-                    <input type="time" id="time" name="time" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Any specific notes?"></textarea>
-                </div>
-    
-                <button type="submit" class="btn">Schedule Appointment</button>
+            <form action="thankyou.html" method="get">
+                <label>
+                    First Name:
+                    <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+                
+                <label>
+                    Last Name:
+                    <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+                
+                
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+                
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
+                </label>
+
+                <label for="appointment_date">Appointment Date:</label>
+                <input type="date" id="appointment_date" name="appointment_date" required>
+
+                <label for="appointment_time">Appointment Time:</label>
+                <input type="time" id="appointment_time" name="appointment_time" required>
+ 
+                
+                <label>
+                    Plan :
+                    <select name="membership">
+                        <option value="Essential Plan">  Essential Plan </option>
+                        <option value="Plus Plan"> Plus Plan </option>
+                        <option value="Premium Plan"> Premium Plan </option>
+                    </select>
+                </label>
+                
+                <label>
+                    Do you want to add  extra information:
+                    <textarea name="description" title="Write here"></textarea>
+                </label>
+                
+                <input type="hidden" name="timestamp" id="timestamp">
+                
+                <input type="submit" value="Schedule Appointment">
             </form>
     
-            <p id="confirmation-message" style="display: none;">Your appointment has been scheduled successfully!</p>
         </div>
     
        

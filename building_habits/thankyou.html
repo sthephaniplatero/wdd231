@@ -6,6 +6,8 @@
     <title>Building Habits</title>
     <meta name="description" content="This is a sample webpage about web development fundamentals for the class WDD231.">
     <meta name="author" content="Sthephani Platero">
+    <link rel="stylesheet" href="styles/style_schedule.css">
+    <link rel="stylesheet" href="styles/style_smaller_schedule.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style_smaller.css">
     <link rel="stylesheet" href="styles/index.css">
@@ -18,7 +20,7 @@
     <meta property="og:url" content="https://sthephaniplatero.github.io/wdd231/building_habits.html">
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:site_name" content="Building Habits" />
-    <meta name="twitter:image:alt" content="Home page for Building Habits"/>   
+    <meta name="twitter:image:alt" content="Schedule page for Building Habits"/>   
 </head>
 
 <div id="sidebar-message" class="sidebar"></div>
@@ -49,36 +51,14 @@
             <a href="schedule.html">Schedule Appointments</a>
             <a href="blog.html">Blog</a>
             <a href="test.html">Your Habits Test</a>
-            <a href="contact.html">Contact Me</a>
         </nav>
     </header>
     
-    
+
     <main>
-
-       </div>
-
-        <section id="contact">
-            <h2>Contact me!</h2>
-            <p>Contact me if you have a question, I will be more than happy to help you!</p>
-            <form action="platerosthephani@gmail.com" method="post" enctype="text/plain">
-              <label for="name">Your name:</label>
-              <input type="text" id="name" name="name" required>
-          
-              <label for="email">Your Email:</label>
-              <input type="email" id="email" name="email" required>
-          
-              <label for="message">Your Message:</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-          
-              <button type="submit">Sent</button>
-            </form>
-            <p>Or you can sent a message to my email directly: <a href="mailto:platerosthephani@gmail.com">karenrodas06@gmail.com</a></p>
-          </section>
-
-        
-
-    </main> 
+        <h1>Thanks for Schedule your Appointment!</h1>
+        <div id="results"></div>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -107,10 +87,11 @@
             </div>
         </div>
     </footer>
+
+
+
     
-    
-    <script src="scripts/building.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script
-   
+    <script src="scripts/thanks.js"></script>
+
 </body>
 </html>

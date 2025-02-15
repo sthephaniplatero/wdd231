@@ -2,12 +2,12 @@
 
 
 :root {
-    --primary-color: #f49527; /* Naranja principal */
-    --secondary-color: #fbd5a8; /*  */
-    --accent-color: #f4f4f4; /* Color claro para fondos */
-    --text-color: hsl(119, 27%, 37%);
-    --white: #fff;
-    --shadow: rgba(0, 0, 0, 0.1);
+    --primary-color: #E67E22; 
+    --secondary-color: #FDE3A7; 
+    --accent-color: #F9F9F9; 
+    --text-color: #215732; 
+    --white: #FFFFFF;
+    --shadow: rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -26,9 +26,10 @@ body {
 #sidebar-message{
     background-color: var(--primary-color);
     text-align: center;
-    text-decoration:dashed;  
+    text-decoration:dashed;
+    color: #F9F9F9;  
     border-radius: 8px; 
-    font-size: 1em;
+    font-size: 2em;
     animation-duration: 10s;
     animation-name: slide-in;
     animation-iteration-count:3;
@@ -64,7 +65,7 @@ header.top-bar {
 .logo-text h2 {
     font-family: 'Lugrasimo', serif; 
     font-size: 1.5rem; 
-    color: var(--primary-color); 
+    color: var(--text-color); 
 }
 
 .logo-text h3 {
@@ -123,7 +124,6 @@ main {
     justify-content: center;
     align-items: center;
     height: auto;
-    background-color:var(--primary-color) ; 
     border-radius: 50%;
     
 }
@@ -135,7 +135,7 @@ main {
 }
 
 #word {
-    color: var(--accent-color) ; 
+    color: var(--text-color) ; 
     font-weight: bold;
     text-decoration: underline;
 }
@@ -186,11 +186,11 @@ footer {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    gap: 20px; /* Espaciado entre elementos */
+    gap: 20px; 
 }
 
 .photo-aboutMe {
-    width: 600px; /* Tamaño ajustable */
+    width: 600px; 
     height: 600px;
     border-radius: 25%;
     object-fit: cover;
@@ -208,12 +208,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 20px; /* Espaciado entre imagen y texto */
+    gap: 20px; 
 }
 
 .about-text {
-    flex: 1; /* Ocupa el espacio restante */
-    max-width: 600px; /* Máximo ancho */
+    flex: 1; 
+    max-width: 600px; 
     font-size: 1rem;
     color: #333;
     line-height: 1.6;
@@ -222,7 +222,7 @@ footer {
 .about-text h3 {
     margin-top: 20px;
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -239,7 +239,7 @@ footer {
 }
 
 .about-text li::before {
-    content: "✔️"; /* Icono de verificación */
+    content: "✔️"; 
     position: absolute;
     left: 0;
     color: var(--text-color);
@@ -251,7 +251,7 @@ footer {
 }
 
 .about-text ul ul li::before {
-    content: "•"; /* Viñetas en sublistas */
+    content: "•"; 
     color: var(--primary-color);
 }
 

@@ -33,8 +33,12 @@ const words = ["About Me", " Karen Rodas", ];
 let index = 0;
 
 function changeWord() {
-    document.getElementById("word").textContent = words[index];
-    index = (index + 1) % words.length;  // Ciclo entre las palabras
+    const wordElement = document.getElementById("word");
+    if (wordElement) {  
+        wordElement.textContent = words[index];
+        index = (index + 1) % words.length;
+    }
 }
 
+setInterval(changeWord, 2000);
 setInterval(changeWord, 2000);

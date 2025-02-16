@@ -135,9 +135,10 @@ main {
 }
 
 #word {
-    color: var(--text-color) ; 
+    font-size: 40px;
     font-weight: bold;
-    text-decoration: underline;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 #animation {

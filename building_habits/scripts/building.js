@@ -29,16 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("lastVisit", now);
 });
 
-const words = ["About Me", " Karen Rodas", ];
-let index = 0;
+const words = ["About Me", "Karen Rodas"];
+        let index = 0;
 
-function changeWord() {
-    const wordElement = document.getElementById("word");
-    if (wordElement) {  
-        wordElement.textContent = words[index];
-        index = (index + 1) % words.length;
-    }
-}
+        function changeWord() {
+            const wordElement = document.getElementById("word");
+            if (wordElement) {  
+                wordElement.style.opacity = 0;
+                setTimeout(() => {
+                    wordElement.textContent = words[index];
+                    index = (index + 1) % words.length;
+                    wordElement.style.opacity = 1;
+                }, 500);
+            }
+        }
 
-setInterval(changeWord, 2000);
-setInterval(changeWord, 2000);
+        setInterval(changeWord, 2000);

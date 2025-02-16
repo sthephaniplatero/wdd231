@@ -6,25 +6,24 @@
     <title>Building Habits</title>
     <meta name="description" content="This is a sample webpage about web development fundamentals for the class WDD231.">
     <meta name="author" content="Sthephani Platero">
-    <link rel="stylesheet" href="styles/style_schedule.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style_smaller.css">
+    <link rel="stylesheet" href="styles/style_test.css">
     <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Building Habits">
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website">
     <meta property="og:description" content="Home page for Building Habits">
     <meta property="og:image" content="https://www.vecteezy.com/photo/28766423-female-nutritionist-gives-consultation-to-patient-on-healthy-fruits-and-vegetables-proper-nutrition-and-dining-concept-generative-ai">
     <meta property="og:url" content="https://sthephaniplatero.github.io/wdd231/building_habits.html">
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="og:site_name" content="Building Habits" />
-    <meta name="twitter:image:alt" content="Schedule page for Building Habits"/>   
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="Building Habits">
+    <meta name="twitter:image:alt" content="Home page for Building Habits">   
 </head>
 
-<div id="sidebar-message" class="sidebar"></div>
-
-
 <body>
+    <div id="sidebar-message" class="sidebar"></div>
+
     <header class="top-bar">
         <div class="logo">
             <a href="#">
@@ -49,92 +48,15 @@
             <a href="schedule.html">Schedule Appointments</a>
             <a href="blog.html">Blog</a>
             <a href="test.html">Your Habits Test</a>
-            
         </nav>
     </header>
     
     <main>
-
-        <div class="appointment-container">
-            <div class="profile-section">
-                <img src="images/excersice.avif" alt="Nutritionist Image" class="profile-img">
-                <h2>Schedule an Appointment with Our Nutritionist</h2>
-                <p>Fill in the form below to book a consultation.</p>
-            </div>
-
-            <div class="main-buttons-container">
-                <button class="membership-button" id="OpenButton1">Essential Plan</button>
-                <button class="membership-button" id="OpenButton2">Plus Plan</button>
-                <button class="membership-button" id="OpenButton3">Premium Plan</button>
-                
-            </div>
-    
-            <!-- Modal -->
-            <div id="dialogBox">
-                <div id="dialogBoxBackdrop"></div> 
-                <div id="dialogBoxContent">
-                    <div>Benefits</div>
-                    <div id="dialogBoxText"></div> 
-                    <button id="closeButton">❌</button>
-                </div>
-            </div>
-    
-    
-            <form action="thankyou.html" method="get">
-                <label>
-                    First Name:
-                    <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
-                </label>
-                
-                <label>
-                    Last Name:
-                    <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
-                </label>
-                
-                
-                <label>
-                    Email:
-                    <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@domain.com" required>
-                </label>
-                
-                <label>
-                    Mobile Phone:
-                    <input type="tel" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
-                </label>
-
-                <label for="appointment_date">Appointment Date:</label>
-                <input type="date" id="appointment_date" name="appointment_date" required>
-
-                <label for="appointment_time">Appointment Time:</label>
-                <input type="time" id="appointment_time" name="appointment_time" required>
- 
-                
-                <label>
-                    Plan :
-                    <select name="membership">
-                        <option value="Essential Plan">  Essential Plan </option>
-                        <option value="Plus Plan"> Plus Plan </option>
-                        <option value="Premium Plan"> Premium Plan </option>
-                    </select>
-                </label>
-                
-                <label>
-                    Do you want to add  extra information:
-                    <textarea name="description" title="Write here"></textarea>
-                </label>
-                
-                <input type="hidden" name="timestamp" id="timestamp">
-                
-                <input type="submit" value="Schedule Appointment">
-            </form>
-    
+        <img id="quiz-image" src="images/2276958.webp" alt="Quiz Image">
+        <div id="quiz-container">
+            <button id="start-button" onclick="startQuiz()">Start Quiz</button>
+            <div id="question-container" style="display: none;"></div>
         </div>
-    
-       
-        
-
-
-
     </main> 
 
     <footer>
@@ -143,13 +65,10 @@
                 <div class="organization-info">
                     <h4>Building Habits By Karen Rodas</h4>
                     <p>San Salvador, El Salvador</p>
-                    
-                    
                 </div>
             </div>
 
             <div class="social-links">
-                
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMu-xhsjlnjS7bGXEZhmQqX46rXFY46oL8g&s" alt="Instagram" style="width: 25px; height: auto;">
                 </a>
@@ -160,15 +79,11 @@
 
             <div class="footer-right">
                 <p><br>Building Habits by Karen Rodas<br>&copy;2024 Sthephani Yamileth Plateros</p>
-               
             </div>
         </div>
     </footer>
     
-    
     <script src="scripts/building.js"></script>
-    <script src="scripts/schedule.js"></script>
-
-   
+    <script src="scripts/test.js"></script>
 </body>
 </html>

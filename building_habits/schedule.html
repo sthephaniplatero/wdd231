@@ -8,7 +8,7 @@
     <meta name="author" content="Sthephani Platero">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style_smaller.css">
-    <link rel="stylesheet" href="styles/style_test.css">
+    <link rel="stylesheet" href="styles/style_schedule.css">
     <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Building Habits">
@@ -52,12 +52,79 @@
     </header>
     
     <main>
-        <img id="quiz-image" src="images/2276958.webp" alt="Quiz Image">
-        <div id="quiz-container">
-            <button id="start-button" onclick="startQuiz()">Start Quiz</button>
-            <div id="question-container" style="display: none;"></div>
-        </div>
-    </main> 
+
+        <div class="appointment-container">
+            <div class="profile-section">
+                <img src="images/excersice.avif" alt="Nutritionist Image" class="profile-img">
+                <h2>Schedule an Appointment with Our Nutritionist</h2>
+                <p>Fill in the form below to book a consultation.</p>
+            </div>
+
+            <div class="main-buttons-container">
+                <button class="membership-button" id="OpenButton1">Essential Plan</button>
+                <button class="membership-button" id="OpenButton2">Plus Plan</button>
+                <button class="membership-button" id="OpenButton3">Premium Plan</button>
+                
+            </div>
+    
+            <!-- Modal -->
+            <div id="dialogBox">
+                <div id="dialogBoxBackdrop"></div> 
+                <div id="dialogBoxContent">
+                    <div>Benefits</div>
+                    <div id="dialogBoxText"></div> 
+                    <button id="closeButton">❌</button>
+                </div>
+            </div>
+    
+    
+            <form action="thankyou.html" method="get">
+                <label>
+                    First Name:
+                    <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+                
+                <label>
+                    Last Name:
+                    <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+                
+                
+                <label>
+                    Email:
+                    <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+                
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
+                </label>
+
+                <label for="appointment_date">Appointment Date:</label>
+                <input type="date" id="appointment_date" name="appointment_date" required>
+
+                <label for="appointment_time">Appointment Time:</label>
+                <input type="time" id="appointment_time" name="appointment_time" required>
+ 
+                
+                <label>
+                    Plan :
+                    <select name="membership">
+                        <option value="Essential Plan">  Essential Plan </option>
+                        <option value="Plus Plan"> Plus Plan </option>
+                        <option value="Premium Plan"> Premium Plan </option>
+                    </select>
+                </label>
+                
+                <label>
+                    Do you want to add  extra information:
+                    <textarea name="description" title="Write here"></textarea>
+                </label>
+                
+                <input type="hidden" name="timestamp" id="timestamp">
+                
+                <input type="submit" value="Schedule Appointment">
+            </form>
 
     <footer>
         <div class="footer-content">
@@ -84,6 +151,6 @@
     </footer>
     
     <script src="scripts/building.js"></script>
-    <script src="scripts/test.js"></script>
+    <script src="scripts/schedule.js"></script>
 </body>
 </html>
